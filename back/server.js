@@ -6,7 +6,7 @@ const app = express()
 
 app.use(express.json())
 app.use(cors())
-mongoose.connect('mongodb+srv://amalks48729:122476@sample.mnb6otj.mongodb.net/user')
+mongoose.connect();
 
 app.get('/' , (req,res)=>{
    userModel.find().then((response)=>{
